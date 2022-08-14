@@ -1,130 +1,163 @@
-/* Main Page below */
 *{
-    margin: 0px;
-        padding: 0px;
-        border: 10px;
-}
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
 
-#body_index{
-    min-height: 100vh;
-        background-position: center;
-        background-size: cover;
-        background-color: rgba(201, 200, 220, 0.982);
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-}
-header h1 {
-    z-index: 2;
-    color: rgb(255, 239, 239);
-    border: 1px solid rgb(108, 57, 57);
-    padding: 6px 12px;
-    display: inline-block;
-}
-
-#lifesource {
-    background-color: pink;
-    z-index: 3;
-    display: inline-block;
-    width: fit-content;
-        height: fit-content;
-    padding: 1em;
-    position: absolute;
-    top: 150px;
-    left: -20px;
-    font-size: 5vw;
-    font-family: 'Times New Roman';
-    font-style: italic;
-    color: rgb(171, 150, 182);
-    max-height: 1%;
-}
-#bdms {
-    background-color: red;
-    z-index: 3;
-    display:inline-block;
-    width: fit-content;
-        height: fit-content;
-    padding: 1em;
-    position: absolute;
-    top: 280px;
-    left: 20px;
-    font-size:2vw;
-    font-family: 'Times New Roman';
-    font-style: italic;
-    color: rgb(146, 59, 73);
-}
-
-.background_1{
-    --img_height: 20px;
-    position: relative;
-    display:flex;
-    z-index: 2;
-    width: 100%;
-    height: 80%;
-
-    border: 0px solid #382732;
-    padding: 0em;
-    object-fit:contain;
-    background-color: rgb(0, 0, 0);
     
 }
-
-.back1{
+body{
+    background-color: white;
+}
+/* this is for the background */
+.background{
+    width: 100vh;
+    height: 100vh;
     position: relative;
-    background-size: cover;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position:contents;
-    display: inline-block;
-    z-index: 2;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* this is for the navbar */
+nav {
+    z-index: 5;
     width: 100%;
-    height: 15%;
-    left: 0%;
-    right: 0px;
+    position: fixed;
     top: 0px;
-    
+    left: -10px;
+    padding: 10px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: safe;
+    box-shadow: 40px 0px 20px rgb(53, 53, 53);
 }
-/* this is for nav bar */
-.menu {
-    width: 100%;
-    height: 20%;
-    z-index: 100;
-    position: absolute;
-    background-color: #ffffff;
+/* this is for the navbar in a horizontal view */
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: auto;
+
 }
-#nav_signup{
-    height: 50px;
-    width: 80px;
-    background-color: red;
-    position: absolute;
-    font-size: 22px;
+/* this is for navbar decoration */
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 250, 250);
+    font-size: 17px;
+    text-shadow: 3px 4px 7px rgb(0, 0, 0);
 }
 
-#donate {
-    z-index: 3;
-    display: contents;
-    width: 1500px;
-    height: 150px;
-    padding: 1em;
+.LSF{
+    text-align: center;
+}
+.LSF h1{
     position: relative;
-    top: -400px;
-    left: 800px;
-    font-size: 130px;
-    font-family: 'Times New Roman';
-    text-decoration: underline;
-    text-transform: capitalize;
-    color: rgb(171, 150, 182);
+    left: 100px;
+    z-index: 2;
+    font-size: 80px;
+    color: rgb(217, 230, 252);
+    top: -500px;
+    height: 50px;
+    width: 1000px;
+    text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
 }
 
-/* Donate Blood Page Below */
+.backvid{
+    z-index: -1;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    right: 0;
+    bottom: 0;
 
-#body_donatenow{
-    background-color:#b5afc2;
 
 }
+.floating{
+    display:inline-block;
+    position:absolute;
+    margin: 0px;
+    z-index: 0;
+    left: 13px;
+    width: 177.8vh;
+    height: 200vh;
+    top: 800px;
+    padding: 0% 0%;
+    background-color: rgba(218, 219, 248, 0.806);
 
-.ONEbackground{
-    background-color:#382732;
-    opacity: .5;
-    z-index: 1;
+    /* box-shadow: 0px 40px 10px 50px rgb(196, 196, 196); */
+}
+
+.wybt{
+    z-index: 2;
+    position: absolute;
+    left: 400px;
+    top: 60px;
+    height: 20px;
+    width: 100%;
+    font-size: 20px;
+    color: rgba(74, 2, 2, 0.701);
+}
+
+.Aplus{
+    z-index: 5;
+    position: relative;
+    left: 10px;
+    top: 100px;
+}
+.Aminus{
+    z-index: 5;
+    position: relative;
+    left: 150px;
+    top: -46px;
+}
+.Bplus{
+    z-index: 5;
+    position: relative;
+    left: 300px;
+    top: -190px;
+}
+.Bminus{
+    z-index: 5;
+    position: relative;
+    left: 450px;
+    top: -335px;
+}
+.ABplus{
+    z-index: 5;
+    position: relative;
+    left: 600px;
+    top: -480px;
+}
+.ABminus{
+    z-index: 5;
+    position: relative;
+    left: 750px;
+    top: -623px;
+}
+.Oplus{
+    z-index: 5;
+    position: relative;
+    left: 900px;
+    top: -766px;
+}
+.Ominus{
+    z-index: 5;
+    position: relative;
+    left: 1060px;
+    top: -910px;
+}
+
+.donate{
+    text-align: center;
+    position: relative;
+    left: 100px;
+    z-index: 2;
+    font-size: 80px;
+    color: rgb(217, 230, 252);
+    top: -500px;
+    height: 50px;
+    width: 1000px;
+    text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
 }
