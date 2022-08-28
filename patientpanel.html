@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <video autoplay loop muted plays-inline class="backvid">
+            <source src="img/1videoplayback.mp4" type="video/mp4">
+        </video>
+        <div class="navbar">
+            <nav>
+                <a href="#"><img src="img/LifeSource Foundation-1 (2).png" alt="logo" height="50px" width="200px"></a> 
+               <ul>
+                   <li> <a href="index.html">HOME</a> </li>
+                   <li> <a href="SignUp.html">SIGN UP</a> </li>
+                   <li> <a href="Login.html">LOGIN</a> </li>
+                   <li> <a href="donorpanel.html">DONOR PANEL</a> </li>
+                   <li> <a href="patientpanel.html">PATIENT PANEL</a> </li>
+                   <li> <a href="admin.html">ADMIN</a> </li>
+                   <li> <a href="volunteer.html">VOLUNTEER</a> </li>
+                   <li> <a href="guest.html">GUEST</a> </li>
+               </ul>
+           </nav>
+   
+        </div>
+        <div>
+            <div class="centerpatientpanel">
+            <h1 class="blooddonationform">Blood Donation Form</h1>
+            <form method="post">
+                <br>
+                <h2>What are you donating?</h2>
+                <br>
+                
+                <div class="btn-group">
+                    <button>Whole Blood</button>
+                    <button>Platelets</button>
+                    <button>Plasma</button>
+                    <button>Double Red Cells</button>
+                  </div>
+                  <br>
+                  <select name="format" id="format">
+                    <option selected disabled>What is your Blood Type?</option>
+                    <option value="Apos">A+</option>
+                    <option value="Aneg">A-</option>
+                    <option value="Bpos">B+</option>
+                    <option value="Bneg">B-</option>
+                    <option value="ABpos">AB+</option>
+                    <option value="ABneg">AB-</option>
+                    <option value="Opos">O+</option>
+                    <option value="Oneg">O-</option>
+                  </select>
+                
+
+                    <form method="post">
+                        <br>
+                        <br>
+                    <label for="fname">First name: </label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name: </label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    </form>
+                    <br>
+                <input type="submit" value="Login">
+                <div class="signuplink"> Already got an account?
+                    <a href="Login.html">Login</a>
+                </div>
+                
+            </form>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
