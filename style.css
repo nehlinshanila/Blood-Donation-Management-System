@@ -1,6 +1,7 @@
 *{
     z-index: 0;
     margin: 0;
+    z-index: 0;
     /* padding: 0; */
     /* box-sizing: content-b; */
 
@@ -25,16 +26,16 @@ body{
 /* this is for the navbar */
 
 .navbar{
-    z-index: 11;
+    z-index: 1;
     position: absolute;
     overflow: hidden;
 }
 nav {
-    z-index: 10;
+    z-index: 2;
     width: 100%;
     position: fixed;
     top: -10px;
-    left: 0px;
+    left: -50px;
     padding: 10px 3%;
     display: flex;
     align-items: center;
@@ -45,21 +46,36 @@ nav {
 }
 /* this is for the navbar in a horizontal view */
 nav ul li{
-    z-index: 5;
+    z-index: 3;
     list-style: none;
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-top: 10px;
 
 }
 /* this is for navbar decoration */
 nav ul li a{
-    z-index: 5;
+    z-index: 4;
     text-decoration: none;
     color: rgb(255, 250, 250);
     font-size: 19px;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
+.undersquare{
+    color: #2691d900;
+}
+.verline{
+    z-index: 1;
+    left: 990px;
+    top: 0px;
+    z-index: 2;
+    position: fixed;
+    height: 64px;
+    width: 25%;
+    background-image: linear-gradient(to right, #00000070, #4d01085b, rgba(58, 0, 0, 0.854));
+    box-shadow: 1px 2px 11px 2px rgba(141, 116, 116, 0.082);
+}
+
 .main{
     z-index: 0;
     background-color: rgba(255, 255, 255, 0.747);
@@ -94,13 +110,90 @@ nav ul li a{
     position: fixed;
     height: fit-content;
     width: 100%;
-    /* height: auto;
-    width: auto; */
-    right: 0;
+    background-position: center;
     bottom: 0;
+    background-size: cover;
     /* min-width: 100vh; */
     min-height: 100vh;
 }
+/* about us */
+
+.aboutusback {
+    position: relative;
+    background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
+    height: 110vh;
+    width: 140vh;
+    margin: 25px auto 30px;
+    border-radius: 10px;
+}
+.aboutusbackk{
+    position: relative;
+    background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
+    height: 100%;
+    width: 100vh;
+    margin-top: 10%;
+    margin-left: 23%;
+    border-radius: 10px;
+}
+
+.aboutus {
+    margin-top: 130px;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding: 10px;
+    line-height: 35px;
+}
+
+.aboutus h1 {
+    font-size: 7vh;
+    padding: 10px;
+    font-weight: 1000;
+    background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
+    /* got it from internet */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: blue;
+    text-align: center;
+}
+.aboutus h6{
+    font-size: 2.4vh;
+    padding: 5px;
+    font-weight: 100;    
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+/* about us end */
+/* blood table */
+table, th, td {
+    border:1px solid black;
+    text-align: center;
+    box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.123);
+    background-image: linear-gradient(to right, #e2d3d385, rgba(179, 105, 105, 0.212));
+  }
+.btable {
+    font-size: 5vh;
+    padding: 20px;
+    text-align: center;
+    background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
+    /* got it from internet */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bloodtable{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 20%;
+    height: 20vh;
+    width: 60vh;
+    text-align: center;
+}
+.bcol{
+    font-size: 3vh;
+    padding: 20px;
+    text-align: left;
+}
+
+/* blood table ends */
 
 
 .longline{
@@ -239,53 +332,600 @@ nav ul li a{
     font-size: 20px;
     text-align: left;
 }
-.ready{
+.readytodonate{
     font-size: 7vh;
     width: 400px;
     font-family:'Times New Roman', Times, serif;
     position: relative;
     left: 30%;
     color: rgb(18, 0, 0);
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(66, 0, 0, 0.541));
+    border-radius: 5%;
+    box-shadow: 10px 6px 20px 0 rgba(0, 0, 0, 0.909);
+}
+.readytorecieve{
+    font-size: 7vh;
+    width: 400px;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    left: 30%;
+    color: rgb(18, 0, 0);
     border-radius: 5%;
     box-shadow: 10px 6px 20px 0 rgba(0, 0, 0, 0.909);
 }
 
 /* donorpanel ends */
+/* donateblood/patientpanel begins */
 
-
-
-/* patient panel starts */
-
-
-.centerpatientpanel{
-    position: absolute;
-    margin-top: 150px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 800px;
-    background: rgba(235, 235, 235, 0.703);
-    border-radius: 10px;
-    box-shadow: 10px 30px 70px 0px rgba(0, 0, 0, 0.514);
-}
-select{
-    height: 40px;
-    width: 300px;
+.donateform{
+    margin-top: 100px;
+    margin-left: 18%;
+    width: 800px;
+    background-color: rgba(106, 27, 27, 0.847);
+    color: #fff;
+    padding: 10px 0 10px 0;
     text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+.dform{
+    background-color: #ffffffcc;
+    width: 800px;
+    margin-left: 18%;
+    margin-bottom: 40px;
+    border-radius: 0 0 15px 15px;
+}
+.dformm{
+    padding: 10px;
+}
+#dname{
+    width: 100%;
+    height: 100px;
+}
+.dname{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+.dnew{
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-top: -120px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+.ddisease{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 500px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+#ddisease{
+    width: 100%;
+    height: 20vh;
+}
+.dddisease{
+    position: relative;
+    left: 450px;
+    top: -30px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    width: 250px;
+}
+#dd{
+    width: 100%;
+    height: 30vh;
+}
+.dd{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+#dhw{
+    width: 100%;
+    height: 10vh;
+}
+.dhw{
+    margin-left: 25px;
+    margin-top: 0px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+.dhww{
+    position: absolute;
+    left: 450px;
+    top: 850px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+.dhwww{
+    position: absolute;
+    left: 600px;
+    top: 860px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+.dhwwww{
+    position: absolute;
+    left: 780px;
+    top: 870px;
+    width: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+#ddob{
+    width: 100%;
+    height: 10vh;
+}
+.ddob{
+    margin-left: 25px;
+    margin-top: 0px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+.dfirstname{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.dlastname{
+    position: relative;
+    left: 417px;
+    top: -80px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.dfirstlabel{
+    position: relative;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 203px;
+    top: -45px;
+}
+.dlastlabel{
+    position: relative;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 490px;
+    top: -76px;
+}
+.dmonth{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    width: 100px;
+}
+.dmonthlabel{
+    position: relative;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 60px;
+    top: -6px;
+}
+.dday{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    width: 100px;
+
+}
+.ddaylabel{
+    position: relative;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 60px;
+    top: -6px;
+}
+.dyear{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    width: 100px;
+
+}
+.dyearlabel{
+    position: relative;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 60px;
+    top: -6px;
+}
+.demail{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.dphone{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.hl{
+    position: relative;
+    width: 476px;
+    left: 200px;
+    top: -40px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.daddress_road{
+    position: relative;
+    left: 200px;
+    top: -30px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.daddresslabel_road{
+    position: relative;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 200px;
+    top: -36px;
+}
+.daddress_house{
+    position: relative;
+    left: 400px;
+    top: -75px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.daddresslabel_house{
+    position: relative;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 490px;
+    top: -80px;
+}
+.daddress_zip{
+    position: relative;
+    left: 110px;
+    top: -20px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.daddresslabel_zip{
+    position: relative;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 210px;
+    top: -30px;
+}
+.daddress_city{
+    position: relative;
+    left: 427px;
+    top: -65px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.daddresslabel_city{
+    position: relative;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 500px;
+    top: -60px;
+}
+
+.dfeetlabel{
+    position: relative;
+    color: #0000009b;
+    text-transform: capitalize;
     font-size: 15px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-image: linear-gradient(to right, rgba(183, 183, 183, 0.281), rgba(116, 1, 1, 0.559));
-    box-shadow: 5px 8px 20px 0px rgba(0, 0, 0, 0.274);
+    height: 200px;
+    width: 200px;
+}
+.dinchlabel{
+    position: relative;
+    color: #0000009b;
+    text-transform: capitalize;
+    font-size: 15px;
+    height: 200px;
+    width: 200px;
+}
+
+.dweightlabel{
+    position: relative;
+    color: #0000009b;
+    text-transform: capitalize;
+    font-size: 15px;
+    height: 200px;
+    width: 200px;
 }
 
 
+.dbloodtype{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+.doption{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 532px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    overflow: hidden;
+}
+.doption option{
+    font-size: 20px;
+}
+#ddonate{
+    margin-left: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+.dradio{
+    display:inline-block;
+    padding-right: 70px;
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+}
+.dradio input{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
 
-/* patient panel ends */
+.dsubmit{
+    background-color: #ad0c0ccd;
+    display: block;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 14px 110px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+    margin-left: 200px;
+}
+.dsubmit:hover{
+    background-color: rgb(18, 1, 1);
+}
+
+
+/* donateblood/patientpanel ends */
+
+/* money starts */
+
+.wrapper{
+    background: rgba(235, 235, 235, 0.703);
+    width: 600px;
+    padding: 25px;
+    margin: 25px auto 0;
+    box-shadow: 0px 0px 20px black;
+    margin-top: 12vh;
+    border-radius: 10px;
+}
+.wrapper h2{
+    font-size: 34px;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.wrapper h4{
+    padding-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+.input-group{
+    margin-bottom: 8px;
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 4px 0;
+}
+.input-box{
+    width: 90%;
+    margin-right: 12px;
+    position: relative;
+    
+}
+.input-box:last-child{
+    margin-right: 0;
+}
+.bdms-name{
+    padding: 14px 10px 14px 50px;
+    width: 80%;
+    background-color: #fff0f090;
+    border: 1px solid black;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    columns: rgb(91, 91, 91); 
+}
+.name:focus, .dob:focus{
+    -webkit-box-shadow:0 0 2px 1px blue;
+    -moz-box-shadow: 0 0 2px 1px blue;
+    box-shadow: 0 0 2px 1px blue;
+    border: 1px solid blue;
+}
+.input-box .icon{
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    color: #333;
+    background-color: lightgoldenrodyellow;
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+    font-size: 20px;
+    pointer-events: none;
+    border: 1px solid black;
+    border-right: none;
+}
+.name:focus + .icon{
+    background-color: lightblue;
+    color: #fff;
+    border-right: 1px solid lightblue;
+    border: none;
+    transition: 1s;
+}
+.dob{
+    width: 20%;
+    padding: 14px;
+    text-align: center;
+    background-color: #fff0f090;
+    transition: 0.3s;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    border-radius: 3px;
+}
+.wrapper .radio{
+    display: none;
+}
+
+.input-box label{
+    width: 20%;
+    padding: 10px;
+    background-color: #fff0f090;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border: 1px solid #c0bfbf;
+}
+.input-box label:first-of-type{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+}
+.input-box label:last-of-type{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.radio:checked + label{
+    background-color: rgba(155, 84, 84, 0.648);
+    color: white;
+    transition: 0.2s;
+}
+.input-box select{
+    display: inline-block;
+    width: 50%;
+    padding: 12px;
+    background-color: #fff0f090;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    cursor: pointer;
+    transition: all 0.2 ease;
+}
+.input-box select:focus{
+    background-color: lightblue;
+    color: #fff;
+    text-align: center;
+}
+.wrapper button{
+    width: 100%;
+    background: transparent;
+    border: none;
+    background: rgb(104, 167, 221);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.35s ease;
+}
+.wrapper button:hover{
+    cursor: pointer;
+    background-color: rgb(5, 5, 6);
+}
+/* money ends */
+
+
+
 
 
 
@@ -302,26 +942,7 @@ select{
 }
 
 /* article starts */
-/* .xop-banner{
-    z-index: 4;
-    top: 1200px;
-    height: 10vh;
-    width: 100%;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.212); */
 
-    /* z-index: 0;
-    background-color: rgba(47, 84, 206, 0.747);
-    height: 1000vh;
-    width: 100%;
-    top: 900px;
-    /* margin-top: 30px; */
-    /* padding: 0; */
-    /* box-sizing: content-box; */
-    /* position: absolute; */
-    /* overflow: hidden; */
- 
-/* } */
 .site-container{
     z-index: 6;
     padding: 10px;
@@ -403,15 +1024,12 @@ select{
     color: rgb(209, 13, 13);
 }
 
-/* facts start */
-
- 
 
 .factstext{
     
     margin-top: 130px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 12%;
+    margin-right: 12%;
     padding: 10px;
     line-height: 35px;
     
@@ -588,7 +1206,39 @@ input[type="submit"]:hover{
 
 /*  login system ends */
 
+/* congrats start */
+.congratulations{
+    position: relative;
+    background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
+    height: 50vh;
+    width: 80vh;
+    margin: 140px auto 30px;
+    border-radius: 10px;
+}
+.congrats{
+    font-size: 3vh;
+    padding: 50px;
+    font-weight: 1000;
+    background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
+    /* got it from internet */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: blue;
+    text-align: center;
 
+}
+.accept{
+    font-size: 1.8vh;
+    padding: 50px;
+    font-weight: 1000;
+    background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
+    /* got it from internet */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: blue;
+    text-align: center;
+}
+/* congrats end */
 /* signup system starts */
 
 
@@ -723,6 +1373,91 @@ input[type="submit"]:hover{
     background-color: #515152;
   }
 /* signup system ends */
+
+.welcomeback{
+    position: relative;
+    background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
+    height: 100vh;
+    width: 80vh;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+.welcome{
+    margin-top: 130px;
+    margin-right: 12%;
+    padding: 10px;
+}
+.welcome h1{
+    font-size: 7vh;
+    padding: 10px;
+    font-weight: 1000;
+    background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.welcome h2{
+    background-color: rgba(0, 0, 0, 0.057);
+    border-radius: 20px;
+    font-size: 3vh;
+    padding: 10px;
+    font-weight: 1000;
+    text-align: left;
+    margin: 42px;
+}
+.welcome h2 a{
+    color: rgb(38, 62, 149);
+}
+.welcome h6{
+    font-size: 2.5vh;
+    padding: 25px;
+    font-weight: 100;    
+    color: rgb(0, 0, 0);
+    margin: 22px;
+}
+.toprofile {
+    border: 1px solid #6a060675;
+    border-radius: 20px;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    background-color: #6a0606b7;
+}
+.toprofile a{
+    color: white;
+    font-size: 15px;
+}
+.proinfo{
+    position: absolute;
+    background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
+    height: auto;
+    width: 50vh;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-radius: 20px;
+    left: 600px;
+    top: 111px;
+    padding: 60px;
+}
+.proinfoo{
+    font-size: 3vh;
+    padding: 10px;
+    font-weight: 1000;
+    background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    justify-content: center;
+
+}
+.invidiv{
+    background-color: rgba(75, 17, 17, 0.269);
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+}
 
 /* footer starts */
 footer{
