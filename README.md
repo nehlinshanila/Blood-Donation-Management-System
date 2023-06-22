@@ -1,4 +1,4 @@
-BLOOD DONATION MANAGEMENT SYSTEM 🩸
+# Blood Donation Management System :drop_of_blood:
 
 In a country like Bangladesh, general people and specially the lower-middle income families do not have much opportunities. If unfortunately they have an accident then it’s extremely hard for them to find a suitable donor for their blood type since most hospitals these days are saturated with patients. There aren't many options available to them except to wait. Blood donation management system will provide a faster and more efficient way to get their blood type as soon as possible and in the process wont risk a person's life.
 
